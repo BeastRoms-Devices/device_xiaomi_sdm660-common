@@ -65,7 +65,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	vendor.fm.a2dp.conc.disabled=true \
 	vendor.voice.path.for.pcm.voip=true \
 	vendor.audio_hal.in_period_size=144 \
-  vendor.audio_hal.period_multiplier=3
+    vendor.audio_hal.period_multiplier=3
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -158,21 +158,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
-# Fling
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.min.fling_velocity=160 \
-	ro.max.fling_velocity=20000
-
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.backup.ntpServer="0.pool.ntp.org" \
 	persist.vendor.overlay.izat.optin=rro \
 	ro.location.osnlp.package=com.google.android.gms \
 	ro.location.osnlp.region.package=
-
-# HW Keys
-PRODUCT_PROPERTY_OVERRIDES += \
-	qemu.hw.mainkeys=0
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -333,7 +324,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # ZRAM
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.vendor.qti.config.zram=true
-
-# USB debugging at boot
-PRODUCT_PROPERTY_OVERRIDES += \
-	persist.sys.usb.config=mtp,adb
